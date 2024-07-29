@@ -40,6 +40,7 @@ export const SidebarContainer = ({
               styles.sidebarBodyTarget,
               !environment.isDesktop && styles.borderTop
             )}
+            data-testid={`sidebar-tab-content-${sidebar.id}`}
           />
         ))
       ) : (
