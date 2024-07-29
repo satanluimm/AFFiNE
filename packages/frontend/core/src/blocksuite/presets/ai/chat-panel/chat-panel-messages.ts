@@ -389,7 +389,7 @@ export class ChatPanelMessages extends WithDisposable(ShadowlessElement) {
               : html`<div class="avatar"></div>`}
           </div>`
         : AffineAvatarIcon}
-      ${isUser ? 'You' : 'AFFINE AI'}
+      ${isUser ? 'You' : 'AFFiNE AI'}
     </div>`;
   }
 
