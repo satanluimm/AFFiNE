@@ -90,12 +90,13 @@ export const tab = style({
   borderRadius: 4,
   position: 'relative',
   ['WebkitAppRegion' as string]: 'no-drag',
+  border: `1px solid transparent`,
   selectors: {
     [`${tabWrapper} &`]: {
       marginRight: 8,
     },
     '&[data-active="true"]': {
-      boxShadow: cssVar('buttonShadow'),
+      borderColor: cssVarV2('button/innerBlackBorder'),
     },
     '&[data-pinned="true"]': {
       maxWidth: 64,
